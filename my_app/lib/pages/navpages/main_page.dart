@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/pages/navpages/eventpage.dart';
+import 'package:my_app/pages/navpages/explorepage.dart';
 import 'package:my_app/pages/navpages/homepage.dart';
 import 'package:my_app/pages/navpages/launchpage.dart';
 import 'package:http/http.dart' as http;
@@ -12,7 +13,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  List pages = [HomePage(), EventPage(), LaunchPage()];
+  List pages = [HomePage(), EventPage(), LaunchPage(), ExplorePage()];
   int currentIndex = 0;
 
   void onTap(int index) {
@@ -44,6 +45,8 @@ class _MainPageState extends State<MainPage> {
                 label: ("Event"), icon: Icon(Icons.newspaper)),
             BottomNavigationBarItem(
                 label: ("Launch"), icon: Icon(Icons.rocket_launch)),
+            BottomNavigationBarItem(
+                label: ("Explore"), icon: Icon(Icons.travel_explore))
           ]),
     );
   }

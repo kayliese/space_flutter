@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 
-class EventPage extends StatelessWidget {
-  const EventPage({Key? key}) : super(key: key);
+class ExplorePage extends StatelessWidget {
+  const ExplorePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Text(
-        "Event Page",
+        "Explore Page",
         style: TextStyle(color: Colors.white),
       ),
     );
