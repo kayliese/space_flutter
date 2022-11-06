@@ -8,7 +8,10 @@ class EventPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         child: Center(
-      child: Text("Event Page"),
+      child: Text(
+        "Event Page",
+        style: TextStyle(color: Colors.white),
+      ),
     ));
   }
 }

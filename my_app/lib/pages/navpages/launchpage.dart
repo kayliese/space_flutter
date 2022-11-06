@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 class LaunchPage extends StatelessWidget {
@@ -8,7 +9,10 @@ class LaunchPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         child: Center(
-      child: Text("Launch Page"),
+      child: Text(
+        "Launch Page",
+        style: TextStyle(color: Colors.white),
+      ),
     ));
   }
 }
