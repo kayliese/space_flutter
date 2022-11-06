@@ -3,7 +3,6 @@ import 'package:my_app/pages/navpages/eventpage.dart';
 import 'package:my_app/pages/navpages/explorepage.dart';
 import 'package:my_app/pages/navpages/homepage.dart';
 import 'package:my_app/pages/navpages/launchpage.dart';
-import 'package:http/http.dart' as http;
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
