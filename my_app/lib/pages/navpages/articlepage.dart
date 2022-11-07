@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-class EventPage extends StatelessWidget {
+class ArticlePage extends StatelessWidget {
   fetchArticles() async {
     var url;
     url = await http

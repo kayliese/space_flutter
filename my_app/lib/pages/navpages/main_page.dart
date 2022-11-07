@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/pages/navpages/eventpage.dart';
+import 'package:my_app/pages/navpages/articlepage.dart';
 import 'package:my_app/pages/navpages/explorepage.dart';
 import 'package:my_app/pages/navpages/homepage.dart';
 import 'package:my_app/pages/navpages/launchpage.dart';
@@ -12,7 +12,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  List pages = [HomePage(), EventPage(), LaunchPage(), ExplorePage()];
+  List pages = [HomePage(), ArticlePage(), LaunchPage(), ExplorePage()];
   int currentIndex = 0;
 
   void onTap(int index) {
