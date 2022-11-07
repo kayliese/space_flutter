@@ -6,7 +6,8 @@ class viewcontent extends StatefulWidget {
   String? content;
   String? image;
   String? title;
-  viewcontent({this.content, this.image, this.title});
+  String? newsSite;
+  viewcontent({this.content, this.image, this.title, this.newsSite});
   @override
   State<viewcontent> createState() => _viewcontentState();
 }
@@ -52,11 +53,19 @@ class _viewcontentState extends State<viewcontent> {
                   ),
                 ),
                 Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      widget.content.toString(),
-                      style: TextStyle(color: Color(0xff868597)),
-                    ))
+                  padding: const EdgeInsets.all(9.5),
+                  child: Text(
+                    widget.content.toString(),
+                    style: TextStyle(color: Color(0xff868597)),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(9.5),
+                  child: Text(
+                    widget.newsSite.toString(),
+                    style: TextStyle(color: Color(0xff868597)),
+                  ),
+                )
               ],
             ),
             IconButton(

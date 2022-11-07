@@ -51,6 +51,8 @@ class ArticlePage extends StatelessWidget {
                                             ['summary'],
                                         image: snapshot.data[index]['imageUrl'],
                                         title: snapshot.data[index]['title'],
+                                        newsSite: snapshot.data[index]
+                                            ['newsSite'],
                                       )));
                         },
                         child: Container(
