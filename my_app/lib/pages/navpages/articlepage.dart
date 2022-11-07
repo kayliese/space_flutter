@@ -2,6 +2,8 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
+import 'package:my_app/pages/navpages/articledetailpage.dart';
+
 class ArticlePage extends StatelessWidget {
   fetchArticles() async {
     var url;
@@ -39,12 +41,25 @@ class ArticlePage extends StatelessWidget {
                 itemBuilder: (BuildContext context, int index) {
                   return Row(
                     children: [
-                      Container(
-                        height: 125,
-                        alignment: Alignment.centerLeft,
-                        child: Card(
-                          child:
-                              Image.network(snapshot.data[index]['imageUrl']),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => viewcontent(
+                                        content: snapshot.data[index]
+                                            ['summary'],
+                                        image: snapshot.data[index]['imageUrl'],
+                                        title: snapshot.data[index]['title'],
+                                      )));
+                        },
+                        child: Container(
+                          height: 125,
+                          alignment: Alignment.centerLeft,
+                          child: Card(
+                            child:
+                                Image.network(snapshot.data[index]['imageUrl']),
+                          ),
                         ),
                       ),
                       SizedBox(
