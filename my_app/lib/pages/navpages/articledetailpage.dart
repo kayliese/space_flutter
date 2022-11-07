@@ -24,7 +24,7 @@ class _viewcontentState extends State<viewcontent> {
     return Scaffold(
       backgroundColor: Color(0xff191826),
       body: Padding(
-        padding: const EdgeInsets.only(top: 30),
+        padding: const EdgeInsets.only(top: 65),
         child: Stack(
           children: [
             Text(
@@ -34,7 +34,7 @@ class _viewcontentState extends State<viewcontent> {
             Column(
               children: [
                 Container(
-                    height: 400,
+                    height: 300,
                     decoration: BoxDecoration(
                       image: DecorationImage(
                         image: NetworkImage(widget.image.toString()),
@@ -42,7 +42,7 @@ class _viewcontentState extends State<viewcontent> {
                       ),
                     )),
                 Padding(
-                  padding: const EdgeInsets.only(left: 10, right: 5),
+                  padding: const EdgeInsets.only(top: 30, left: 10, right: 5),
                   child: Text(
                     widget.title.toString(),
                     style: TextStyle(
